@@ -1,0 +1,352 @@
+/* ===== RESET GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* ===== LANDING FULL SCREEN ===== */
+  .landing {
+    background-image: url('../assets/images/fondolujo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Capa oscura encima para mejorar contraste */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .contenido {
+    z-index: 2;
+    max-width: 700px;
+    padding: 2rem;
+  }
+  
+  .contenido h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    color: #f5f5f5;
+  }
+  
+  .contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ddd;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+  }
+/* ===== BANNER / CARRUSEL ===== */
+.banner {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 15s infinite;
+  }
+  
+  .slide {
+    flex: 1 0 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Background images: puedes cambiarlas por las tuyas */
+  .slide1 {
+    background-image: url('../assets/img/banner1.jpg');
+  }
+  .slide2 {
+    background-image: url('../assets/img/banner2.jpg');
+  }
+  .slide3 {
+    background-image: url('../assets/img/banner3.jpg');
+  }
+  
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 500px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  }
+  
+  .banner-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .banner-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+  }
+  
+  /* Animación del carrusel */
+  @keyframes slide {
+    0%   { transform: translateX(0%); }
+    33%  { transform: translateX(0%); }
+    36%  { transform: translateX(-100%); }
+    66%  { transform: translateX(-100%); }
+    69%  { transform: translateX(-200%); }
+    99%  { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+  }
+/* ===== DESTACADOS ===== */
+.destacados {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .destacados h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+  
+  .grid-destacados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card .precio {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card .rating {
+    color: #f5b301;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+/* ===== HISTORIA CORPORATIVA ===== */
+.historia {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+.historia h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #111;
+  }
+  
+.historia-contenido .bloque {
+    margin-bottom: 2.5rem;
+  }
+  
+.historia-contenido h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+.historia-contenido p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+.timeline {
+    list-style: none;
+    padding-left: 1rem;
+    border-left: 3px solid #000;
+  }
+  
+.timeline li {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+.timeline li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 5px;
+  }
+  
+.visuales {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+.foto {
+    text-align: center;
+  }
+  
+.foto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+  
+.testimonio {
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 6px;
+    font-style: italic;
+  }
+  
+.video-simulacion {
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+  /* ===== ENCABEZADO ===== */
+.encabezado {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(8px);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    color: #f5b301; /* dorado o amarillo elegante */
+  }
+  .destacados {
+    background-color: #f4f4f4; /* Gris claro para evitar blanco puro */
+    padding: 4rem 2rem;
+  }
+  
+  .destacados h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+  
+  .cards-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  
