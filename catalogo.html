@@ -3,75 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/catalogo.css">
   <title>Catálogo de Relojes</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background:linear-gradient(135deg, #55209f, #6162aa);
-      color: #205385;
-      margin: 0;
-      padding: 20px;
-    }
-
-    .catalogo {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-    }
-
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 10px;
-      text-align: center;
-      background: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card img {
-      width: 100%;
-      height: 200px; /* altura fija */
-      object-fit: contain; /* ajusta las imágenes al mismo tamaño */
-      margin-bottom: 10px;
-    }
-
-    .card h3 {
-      font-size: 16px;
-      margin: 10px 0 5px;
-    }
-
-    .card p {
-      margin: 5px 0;
-      font-size: 14px;
-      color: #444;
-    }
-
-    .stars {
-      color: gold;
-      margin: 5px 0;
-    }
-
-    .detalles {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 6px 12px;
-      background: #000000;
-      color: rgb(255, 255, 255);
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 14px;
-      transition: background 0.3s;
-    }
-
-    .detalles:hover {
-      background: #e05588;
-    }
-  </style>
 </head>
 <body>
   <h1>Catálogo de Relojes</h1>
@@ -106,7 +39,7 @@
         <h3>Elegance</h3>
         <p class="precio">$950</p>
         <div class="rating">★★★★★</div>
-        <a href="catalogo.html" class="btn">Ver detalles</a>
+        <a href="catalogo.html" class="detalles">Ver detalles</a>
     </div>
 
     <div class="card">
