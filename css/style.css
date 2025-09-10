@@ -331,8 +331,9 @@
     color: #f5b301; /* dorado o amarillo elegante */
   }
   .destacados {
-    background-color: #f4f4f4; /* Gris claro para evitar blanco puro */
+    background-color: #8273d6; /* Gris claro para evitar blanco puro */
     padding: 4rem 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
   .destacados h2 {
@@ -348,5 +349,18 @@
     justify-content: center;
     gap: 2rem;
   }
-  
+body {
+  background: linear-gradient(135deg, #1f1c2c, #7f71c6); /* degradado elegante */
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
   
