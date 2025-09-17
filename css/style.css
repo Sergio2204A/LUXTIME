@@ -371,3 +371,52 @@ body {
   gap: 12px;
   padding: 18px 0;
 }
+
+.menu a[aria-current="page"] {
+  border-bottom: 2px solid #f5b301;
+  font-weight: bold;
+}
+
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .encabezado {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 1rem;
+  }
+
+  .menu a {
+    margin: 0.5rem 0;
+  }
+
+  .menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+}
+
+body {
+  padding-top: 80px; 
+}
